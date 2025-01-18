@@ -96,12 +96,43 @@ class Stroll extends Walk {
 }
 
 
+interface Flyer{}
+class Bird implements Flyer { }
+class Eagle extends Bird { }
+class Bat  {
+    public void flyes() throws Exception {}
+}
 
+class TestClass {
+
+    Boolean fff() {
+        return false;
+    }
+    static void main(String[] args) {
+        char[] bb = { 'j', 'a', 'v', 'a' };
+        String cc = new String(bb);
+        System.out.println(cc);
+        Flyer f = new Eagle();
+        Eagle e = new Eagle();
+        Bat b = new Bat();
+
+        while (new TestClass().fff()) System.out.println(0);
+
+        if(f instanceof Flyer) System.out.println("f is a Flyer");
+        if(e instanceof Bird) System.out.println("e is a Bird");
+//        if(b instanceof Bird) System.out.println("b is a Bird");
+    }
+}
 
 
 public class _6_OOA {
 
     public static void main(String[] args) {
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("runs");
+            continue;
+        }
 
         List<Exercise> list = new ArrayList<>();
 
